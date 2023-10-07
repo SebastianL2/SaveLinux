@@ -1,0 +1,1 @@
+total 48 -rw-rw-r-- 1 sebastian sebastian 28988 nov 22 11:59 FalloLog.txt -rw-rw-r-- 1 sebastian sebastian 804 nov 22 11:59 Papelera.txt -rw-rw-r-- 1 sebastian sebastian 0 jun 8 23:18 TXT.txt -rw-rw-r-- 1 sebastian sebastian 6622 nov 22 11:59 UserLog.txt

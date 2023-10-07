@@ -1,0 +1,3 @@
+Las expresiones regulares son un medio para describir patrones de texto. 
+Imaginemos que no sólo queremos buscar en un texto todas las líneas que contienen una palabra
+

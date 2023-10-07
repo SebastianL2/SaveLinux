@@ -1,0 +1,42 @@
+FRUTA=manzana naranja pera
+FRUTA2=(manzana naranja pera)
+echo ${FRUTA[0]}
+echo ${FRUTA2[*]}
+echo $((i+1))
+Para eliminar una variable o array, se puede utilizar el comando unset
+el comando export para convertir mas de una variable local a variable de
+ambiente
+
+Variable Descripcion
+PWD Indica el directorio actual de trabajo
+UID Contiene el numero de usuario para el sistema
+SHLVL Se incrementa cada vez que una instancia de bash es ejecutada. Esta
+variable es util para determinar si el comando exit termina la sesion.
+RANDOM Genera un numero aleatorio entre 0 y 32767
+SECONDS Contiene el numero de segundos que el shell lleva ejecuntadose. Si se
+le asigna un valor numerico entonces llevara el conteo en segundos
+apartir de el valor asignado
+IFS Indica el separador interno de de campos, es utilizado para determinar
+donde comienzan y terminan los campos de una cadena, veremos este
+mas adelante en awk.
+PATH Indica las rutas de busqueda para los comandos. Es una lista de
+directorios separada por dos puntos (:).
+HOME Contiene el directorio de casa de el usuario actual, es el argumento de
+default para el comando cd
+HISTFILE Contiene la ruta para el archivo historico de comandos ejecutados
+ERROR O FUNCIONAMIENO 0 º 1  echo $?
+
+Una encapsulacion como esta (el uso de las llaves) es necesario solamente si el caracter
+despues de el nombre de la variable es un caracter alfanumerico o un guion bajo, en el
+siguiente ejemplo, esta encapsulacion no es necesaria:
+$ C=archivo
+$ echo $C-nuevo
+archivo-nuevo
+redireccionar un proceso largo como n sleep al background
+bg %7 
+bg %(nvariable)
+movelo a foreground
+fg %3
+kill %1
+
+

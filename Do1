@@ -1,0 +1,64 @@
+gnu/linux
+Libbertades
+shell
+ls -l
+chmod
+rwxr-xr-x = 7-5-5
+umask
+777-775=022
+rw-rw-rw= 6-6-6
+666-022=
+111101101
+rw-r--r
+uhmod 66 nombre del servicio
+nano nombrearch
+echo > sobreescribe
+echo >> escribe 
+cat visualiza lo que ese guada2
+mkdir
+cd enrar
+cd .. volver
+more /etc/passwd
+cat /etc/passwd
+tall /etc/passwd
+less /etc/passwd
+wc -w < archivo2    -- contar 
+wc -wl < archivo2
+cat /etc/passwd > archivo2
+ date |wc -w > archivo2
+cat /etc/group | grep sebastian
+cat /etc/group | grep sebastian | wc -l
+cat /etc/group | grep sebastian > archivo2
+kill 
+top
+man kill
+kill -t
+ps
+ps -fe
+
+
+
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+main ()
+{
+int pid, status;
+switch (pid=fork()) {
+case -1: /* Gestión del error */
+exit (1);
+break;
+case 0: /* Proceso hijo */
+printf ("\n Proceso hijo. PID = %d \n", pid);
+break;
+default: /* Proceso padre */
+printf ("\n Proceso padre. PID = %d \n", pid);
+wait (&status); /* espera al final del proceso hijo */
+break;
+} /* fin del switch */
+printf ("\n Fin de la ejecución \n");
+return 0;
+} /* fin de la función main */
+psre
